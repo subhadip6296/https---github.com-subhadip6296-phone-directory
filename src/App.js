@@ -3,7 +3,7 @@ class App extends Component {
  render() {
     return (
       <div className="App">
-        
+        Phone directory
       </div>
     );
  }
