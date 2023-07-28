@@ -1,19 +1,28 @@
 import React,{ Component } from 'react';
+import Header from "./Header";
 class App extends Component {
  render() {
     return (
       <div>
         {/* <div className='header'>
           Phone directory
-        </div>
+        </div> */}
+        <Header/>
         <button> Add </button>
         <div>
           <span> Name </span><br/>
           <span> Phone </span>
-        </div> */}
-        <label htmlFor="name">Name: </label>
-        <input id="name" type="text" placeholder="Type Here" defaultValue="shilpa"/>
-      </div>
+        </div> 
+      {/* //    <label htmlFor="name">Name: </label>
+      //   <input id="name" type="text" placeholder="Type Here" defaultValue="shilpa"/> */}
+      
+      {/* //  <div id="module"></div>
+      //   <p> REACTJS </p> */}
+       </div>
+
+      // React.createElement("div", { id: "module" },
+      //   React.createElement("p",null,"ReactJS")
+      // )
     );
  }
 }
@@ -22,12 +31,3 @@ class App extends Component {
   
 
 
-// function App() {
-//   return (
-//     <div className="App">
-      
-//     </div>
-//   );
-// }
-
-// export default App;
