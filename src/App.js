@@ -3,23 +3,31 @@ import Header from "./Header";
 import './App.css';
 
 class App extends Component {
-  clickHandler(message) {
-    alert(message);
+  // clickHandler(message) {
+  //   alert(message);
+  // }
+
+  constructor()
+  {
+    super();
+    this.state = {
+      subscribersListToShow: []
+    }
   }
  render() {
   
-  let subscribers = [
-    {
-      id:1,
-      name: "Subhadip Mudi",
-      phone: "888888888"
-    },
-    {
-      id:2,
-    name: "Gourav Paul",
-    phone: "99999999",
-    }
-  ]
+  // let subscribers = [
+  //   {
+  //     id:1,
+  //     name: "Subhadip Mudi",
+  //     phone: "888888888"
+  //   },
+  //   {
+  //     id:2,
+  //   name: "Gourav Paul",
+  //   phone: "99999999",
+  //   }
+  // ]
     return (
 
       
@@ -34,7 +42,7 @@ class App extends Component {
         </div>
 
         {
-          subscribers.map(sub => {
+          this.state.subscribersListToShow.map(sub => {
             return <div key={sub.id} className="grid-container">
               <span className="grid-item">{sub.name}</span>
               <span className="grid-item">{sub.phone}</span>
